@@ -9,43 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .intro-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 2rem;
-        background-color: var(--card-background);
-        margin: 4rem 0 2rem;
-        border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      }
-      .intro-title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: var(--primary-color);
-        margin: 0;
-        flex-basis: 30%;
-      }
-      .intro-text {
-        flex-basis: 65%;
-        font-size: 1rem;
-        line-height: 1.6;
-      }
-      @media (max-width: 768px) {
-        .intro-section {
-          flex-direction: column;
-          margin-top: 3rem;
-        }
-        .intro-title,
-        .intro-text {
-          flex-basis: 100%;
-        }
-        .intro-title {
-          margin-bottom: 1rem;
-        }
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -69,35 +32,6 @@
     </nav>
 
     <main>
-      <section class="intro-section">
-        <h2 class="intro-title">Local Food Guide</h2>
-        <div class="intro-text">
-          <p>
-            Nothing captures the essence of Goa quite like its food — it's a
-            culinary adventure like no other.
-          </p>
-          <p>But where should you start?</p>
-          <p>
-            How do you differentiate between your bebinca and your balchão, your
-            xacuti from your sorpotel?
-          </p>
-          <p>
-            These local food guides will take you through the traditional dishes
-            that are the soul of Goan cuisine, and the best spots to savor them
-            when you're in Goa.
-          </p>
-          <p>
-            From fiery vindaloo and tangy fish curry to recheado masala and
-            crispy prawns, to the sweet delight of bibingka, and the rich,
-            layered bebinca — you'll find it all here.
-          </p>
-          <p>
-            Save these guides for an unforgettable taste of Goa's rich culinary
-            heritage!
-          </p>
-        </div>
-      </section>
-
       <div class="food-grid">
         <section id="fish-curry-rice" class="food-item">
           <img
@@ -140,7 +74,11 @@
           </p>
         </section>
 
-        <section id="bebinca" class="food-item">
+        <section
+          id="bebinca"
+          class="food-item"
+          onclick="window.location.href='bebinca.html'"
+        >
           <img
             src="https://ychef.files.bbci.co.uk/1280x720/p0gjfcls.jpg"
             alt="Bebinca"
